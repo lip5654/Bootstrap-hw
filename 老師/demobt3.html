@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'><!--針對手機最佳化，跟裝置寬度一模一樣，比例1:1-->
+    <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.css "><!--assets>dist裡的預設-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.2/cjs/popper.min.js"></script>
+    
+    <script src="assets/dist/js/bootstrap.bundle.js"></script><!--dist裡的預設-->
+    
+    <style type='text/css'>
+    .myfont1{
+        font-family: '微軟正黑體';
+    }
+    
+    .mybtn{
+        color: bisque;
+        background-color: rgb(145, 13, 134);
+        border-color: rgb(145, 13, 134);
+    }
+
+    .mybtn:hover{
+        background-color: rgb(175, 20, 162);
+        border-color: rgb(175, 20, 162);
+        
+
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div class='container myfont1'>
+        <h1>Badge Demo</h1><!--Badge徽章-->
+        <h2>新產品推出 <span class='badge badge-primary'>New</span></h2><!--技巧:用span選字-->
+        <h3><span class='badge badge-danger'>超便宜特賣</span></h3>
+        <h4>特價產品只有<span class='badge badge-info badge-pill'>24H</span></h4>
+        <h5>再不買就<span class='badge badge-success badge-pill'>搶不到</span></h5>
+        <h2>
+            <span class='badge badge-success badge-pill'>
+                您有新訊息<span class='badge badge-danger'>8</span>
+            </span>
+        </h2>
+
+        <h2>
+            <span class='badge badge-primary badge-pill'>
+                您有新訊息<a href='#' class='badge badge-danger'>8</a><!--通常用按鈕設計超連結，不會用badge-->
+            </span>
+        </h2>
+        <hr>
+        <h1>Alerts Demo</h1>
+        <div class='alert alert-primary'>
+            會員登入成功!!
+            <button type="button" class="close" data-dismiss="alert">x</button><!--dismiss:關閉資料-->
+        </div>
+        <div class='alert alert-danger'>
+            帳號密碼<a href='#' class='alert-link'>輸入</a>錯誤!!<!--加入超連結，可連結到購物車的網頁-->
+            <button type="button" class='close' data-dismiss='alert'>&#x2716;</button>
+        </div>
+        <div class='alert alert-info'>
+            <a href='#' class='alert-link'>商品</a>訂購成功!!
+            <button type="button" class='close' data-dismiss='alert'>&#x274c;</button>
+        </div>
+        <div class='alert alert-warning'>
+            恭喜您中獎!!
+            <button type="button" class='close' data-dismiss='alert'>&#x274e;</button>
+        </div>
+        <hr>
+
+
+        <h1>Button Styles Demo</h1>
+        <a href="https://www.apple.com" target=_blank class='btn btn-warning'>蘋果網站</a>
+        <a href="https://www.google.com" target=_blank class='btn btn-success'>谷歌網站</a>
+        <a href="https://www.yahoo.com" target=_blank class='btn btn-outline-success'>奇摩網站</a><!-- btn-outline-xxx 即可將按鈕改成邊框樣式。-->
+
+        <input type="submit" value='送出資料' class='btn btn-info'>
+        <input type="submit" value='重置資料' class='btn btn-success'>
+        
+        <button type='button' class='btn btn-danger'>按鍵功能one</button>
+        <br><br><br>
+
+        <a href="https://www.momo.com" target=_blank class='btn btn-outline-success btn-sm mybtn'>Bootstrap網站(自訂顏色)</a>
+        <!--a、input、button的class都使用btn，後者再自訂-->
+        <hr>
+
+        <a href="https://www.apple.com" target=_blank class='btn btn-primary btn-lg'>蘋果網站</a><!--使用botstrap時改顏色、字體就好-->
+        <a href="https://www.apple.com" target=_blank class='btn btn-primary btn-sm'>蘋果網站</a>
+        <a href="https://www.apple.com" target=_blank class='btn btn-primary'>蘋果網站</a>
+        <hr>
+        <a href="https://www.apple.com" target=_blank class='btn btn-primary btn-block'>蘋果網站</a><!--btn-block全尺寸按鈕-->
+
+        <hr>
+        <div class='btn-group mx-3'><!--按鈕群組功能:按鈕會黏在一起; margin外距(數字自訂標準0-5):mt ml mr mb(x代表左右,y代表上下); p內距:pt pl pr pb-->
+        <a href="https://www.apple.com" target=_blank class='btn btn-warning'>蘋果網站</a>
+        <a href="https://www.google.com" target=_blank class='btn btn-success'>谷歌網站</a>
+        <a href="https://www.yahoo.com" target=_blank class='btn btn-outline-success'>奇摩網站</a>
+        </div>
+
+        <div class='btn-group btn-group-sm'><!--按鈕變大:lg, 小:sm 顆-->
+            <a href="https://www.apple.com" target=_blank class='btn btn-warning'>蘋果網站</a>
+            <a href="https://www.google.com" target=_blank class='btn btn-success'>谷歌網站</a>
+            <a href="https://www.yahoo.com" target=_blank class='btn btn-outline-success'>奇摩網站</a>
+        </div>
+
+        <div class='btn-group-vertical ml-5'><!--按鈕變大:lg, 小:sm 顆-->
+            <a href="https://www.apple.com" target=_blank class='btn btn-warning'>蘋果網站</a>
+            <a href="https://www.google.com" target=_blank class='btn btn-success'>谷歌網站</a>
+            <a href="https://www.yahoo.com" target=_blank class='btn btn-outline-success'>奇摩網站</a>
+        </div>
+        <br>
+        <br>
+
+        <div class='btn-group d-flex'><!--d-flex全尺寸按鈕群組-->
+            <a href="https://www.apple.com" target=_blank class='btn btn-warning'>蘋果網站</a>
+            <a href="https://www.google.com" target=_blank class='btn btn-success'>谷歌網站</a>
+            <a href="https://www.yahoo.com" target=_blank class='btn btn-outline-success'>奇摩網站</a>
+        </div>
+
+        <hr>
+        <h1>Image Demo</h1>
+        <img src="pexels-photo-257816.jpeg" class='img-fluid' alt="健康">
+        <br><br><br>
+        <img src="pexels-photo-257816.jpeg" class='img-thumbnail' alt="健康"><!--縮圖:多加一個小外框，可用在商品呈現-->
+
+        <img src="pexels-photo-257816.jpeg" class='rounded' width='400' alt="健康"><!--圓角矩形-->
+        <img src="pexels-photo-257816.jpeg" class='rounded-circle' width='400' height='400' alt="健康">
+
+
+
+        <br><br><br><br><br><br>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'><!--針對手機最佳化，跟裝置寬度一模一樣，比例1:1-->
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.2/cjs/popper.min.js'></script>
+    <script src="assets/dist/js/bootstrap.bundle.js"></script>
+    <style type='text/css'>
+    .myfont1{
+        font-family: '微軟正黑體';
+    }
+
+    .mywidth1{
+        width:850px;
+
+    }
+
+    .mywidth2{
+        width: 850px;
+    }
+
+    .mywidth3{
+        width: 450px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class='container-lg myfont1'>
+        <h1>Jumbotron Demo</h1><!--提供一個區塊呈現'標題'跟'文章'內容; jumbotron不會自動排版; -->
+        <div class='jumbotron'><!--jumbotron-fluid-->
+            <h2>VR虛擬博物館</h2>
+            <p>在新冠病毒(COVID-19)全球大流行中，台灣運用科技成功防疫，亮眼表現受到全球關注與肯定，透過駐俄羅斯代表處的安排</p>
+            <div class='text-center'>
+            <p><img src="資策會.jpg" class='rounded mywidth2' alt="vb lab"></p>
+            </div>
+            <p><a href="https://www.iii.org.tw/Press/NewsDtl.aspx?nsp_sqno=2289&fm_sqno=14" target=_blank class='btn btn-secondary'>閱讀全文</a></p>
+            <!--超連結使用按鈕button呈現-->
+        </div>
+
+        <div class='jumbotron mywidth1'>
+            <h2>VR虛擬博物館</h2>
+            <p>在新冠病毒(COVID-19)全球大流行中，台灣運用科技成功防疫，亮眼表現受到全球關注與肯定，透過駐俄羅斯代表處的安排</p>
+            <p><a href="https://www.iii.org.tw/Press/NewsDtl.aspx?nsp_sqno=2289&fm_sqno=14" target=_blank class='btn btn-secondary'>閱讀全文</a></p>
+            <!--超連結使用按鈕button呈現-->
+        </div>
+        <hr>
+        <h2>Card Demo</h2>
+
+        <div class='card'><!--card元素沒有說全部都要寫，但架構要知道-->
+            <div class='card-header'>首頁</div>
+            <div class='card-body'>
+                <h5 class='card-title'>產品標題</h5>
+                <p class='card-text'>產品說明</p>
+                <a href="#" class='card-link'>產品超連結</a>
+            </div>
+            <div class='card-footer'>頁腳</div>
+        </div>
+        <br><br><br>
+
+        <div class='card mywidth3 text-center'><!--text-center對齊中間-->
+            <img src="cake.jpg" class='card-mg-top' alt='漢堡'>
+            <div class='card-body'>
+                <h5 class='card-title'>超好吃蛋糕</h5>
+                <p class='card-text'>超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕,</p>
+                <a href="#" class='btn btn-danger'>NT$120</a>
+                <a href="#" class='btn btn-primary'>詳細資訊</a>
+            </div>           
+        </div>
+        <br><br><br>
+
+        <div class='card mywidth1 text-white'>
+            <img src="cake.jpg" class='card-mg-top' alt='漢堡'>
+            <div class='card-img-overlay'>
+                <h5 class='card-title  text-right'>超好吃蛋糕</h5>
+                <p class='card-text'>超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕, 超好吃蛋糕,</p>
+                <div class='text-right'>
+                <a href="#" class='btn btn-danger'>NT$120</a>
+                <a href="#" class='btn btn-primary'>詳細資訊</a>
+                </div>
+            </div>           
+        </div>
+
+        
+
+
+
+    </div>
+</body>
+</html>

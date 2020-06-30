@@ -1,0 +1,71 @@
+.myfont1{
+    font-family: '微軟正黑體';
+    background-color:	#FFF7FB;    
+}
+
+.myfont1 p{
+
+}
+.myfont2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.myfont3{
+    text-decoration: line-through;
+    color:#929090;
+    font-size:16px;
+}
+.myfont4{        
+    color:#ff0062;
+    font-size:20px;
+    font-weight: bold;
+}
+.bgcolor{
+    background-color:  #f7d9f8;
+}
+.footer{
+    font-size:18px;        
+    background-color:#454b50;
+    text-align: center;
+}
+.color{
+    background-color: 	#FFD0FF;
+    font-weight: bold;
+}
+.color img{
+    width:60px;
+    height:60px;
+
+}
+.text{
+    text-align:center;
+    font-family: '微軟正黑體';
+}
+.title{
+    font-family: '微軟正黑體';
+    text-align: center;
+}
+
+.page{
+    background-color: #eaf0ed;
+    width:15000px;
+    height:380px;
+}
+
+.page img{
+    display: block;
+    padding-left: 400px;
+    padding-bottom: 250px;;
+}
+
+.img img{
+    display: block;
+    width:900px;
+    height:450px;
+    margin-left: 15px;    
+}
+
+.list > a{
+    font-size: 13px;
+}
+

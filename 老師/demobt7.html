@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'><!--針對手機最佳化，跟裝置寬度一模一樣，比例1:1-->
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.2/cjs/popper.min.js'></script>
+    <script src="assets/dist/js/bootstrap.bundle.js"></script>
+    <style type='text/css'>
+    .myfont1{
+        font-family: '微軟正黑體';
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class='container myfont1'>
+        <h1>Grid(分格) 自動折行 demo</h1><!--指定內容寬度尺寸分成12等分，超過12會自動折行-->
+
+
+        <h3>1.</h3>
+        <div class='row'><!--sm, md, lg, xl, fluid-->
+            <div class='col-md-4'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div>
+            <div class='col-md-4'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div>
+            <div class='col-md-4'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div>          
+        </div>
+
+        <h3>2.</h3>
+        <div class='row justify-content-start'>
+            <div class='col-md-4'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div>
+            <div class='col-md-8'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div>  
+        </div>
+
+        
+        <h3>3.</h3>
+        <div class='row justify-content-end'>
+            <div class='col-md-3'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div>
+            <div class='col-md-3'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div> 
+            <div class='col-md-3'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div> 
+        </div>
+
+        <h3>4.</h3>
+        <div class='row justify-content-center'><!--justify-content-center:置中; justify-content-center:靠右; start, center, end-->
+            <div class='col-md-4'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div>
+            <div class='col-md-8'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div> 
+            <div class='col-md-8'><img src="pexels-photo-257816.jpeg" class="img-fluid"></div> 
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
